@@ -1,12 +1,45 @@
 <nav class="w-full h-16 ">
-    <div class="header container mx-auto flex justify-between items-center h-16">
+    <div class="header container mx-auto flex justify-between items-center
+        h-16">
         <span class="font-main text-white">
             {{myName}}
         </span>
-        <ul>
-            <li class="font-main text-white">
-                {{projects}}
-            </li>
-        </ul>
-    </div>    
+
+        <div class="right-links flex justify-between items-center">
+            <select class="form-select appearance-none rounded
+                border border-solid
+                border-black
+                bg-[#111]
+                px-3
+                text-white
+                text-sm
+                font-secondary
+                ">
+            <option value="en" class="text-white font-secondaryappearance-none bg-black">
+                🇺🇲 EN
+                
+            </option>
+            <option value="en"class="text-white font-secondary appearance-none bg-black">
+                🇵🇱 PL
+                
+            </option>
+
+            </select>
+            <ul class="flex justify-between items-center">
+                
+                <li class="font-main text-white ml-2">
+                   <a href="">
+                    {{projects}}
+                   </a>
+                </li>
+                <li class="font-main text-white ml-2">
+                    <a href="">
+                        {{contact}}
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </nav>
