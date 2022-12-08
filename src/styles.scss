@@ -37,3 +37,20 @@ $font-secondary:'Oswald', sans-serif;
 body {
     background-color: #111;
 }
+
+
+body:not(.dark-mode-preloading) {
+    transition: all 0.3s linear;
+  }
+  
+  
+  
+  body.light-mode {
+    background-color: #dfe6e9;
+    color: #2d3436;
+  }
+
+  body.dark-mode {
+    background-color: #111;
+    color: #dfe6e9;
+  }

@@ -1,12 +1,27 @@
-<nav class="w-full h-16 ">
+<div class="w-full h-16 ">
     <div class="header container mx-auto flex justify-between items-center
         h-16">
-        <span class="font-main text-white">
+        <span class="font-main dark-mode">
             {{myName}}
         </span>
 
         <div class="right-links flex justify-between items-center">
-            <select class="form-select appearance-none rounded
+
+            <ul class="flex justify-between items-center">
+
+                <li class="font-main dark-mode ml-2">
+                    <a href="">
+                        {{projects}}
+                    </a>
+                </li>
+                <li class="font-main dark-mode ml-2">
+                    <a href="">
+                        {{contact}}
+                    </a>
+
+                </li>
+            </ul>
+            <select class="form-select rounded
                 border border-solid
                 border-black
                 bg-[#111]
@@ -14,32 +29,41 @@
                 text-white
                 text-sm
                 font-secondary
+                ml-2
+                mr-1
                 ">
-            <option value="en" class="text-white font-secondaryappearance-none bg-black">
-                🇺🇲 EN
-                
-            </option>
-            <option value="en"class="text-white font-secondary appearance-none bg-black">
-                🇵🇱 PL
-                
-            </option>
+                <option value="en" class="text-white
+                    font-secondary bg-black">
+                    🇺🇲 en
+
+                </option>
+                <option value="en" class="text-white font-secondary
+                    bg-black">
+                    🇵🇱 pl
+
+                </option>
 
             </select>
-            <ul class="flex justify-between items-center">
-                
-                <li class="font-main text-white ml-2">
-                   <a href="">
-                    {{projects}}
-                   </a>
-                </li>
-                <li class="font-main text-white ml-2">
-                    <a href="">
-                        {{contact}}
-                    </a>
-                    
-                </li>
-            </ul>
-        </div>
 
+            <!---dark mode icons here-->
+            <input
+                id="darkMode"
+                type="checkbox"
+                [checked]="darkMode$ | async"
+                (change)="onToggle()"
+                class="toggle mt-2"
+                />
+            <label class="toggle-label" for="darkMode">
+                <img
+                    src="./assets/img/sun(1).svg"
+                    class="moon"
+                    />
+                <img
+                    src="./assets/img/moon.svg"
+                    class="sun"
+                    
+                    />
+            </label>
+
+        </div>
     </div>
-</nav>
