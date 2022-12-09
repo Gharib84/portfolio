@@ -9,24 +9,22 @@
     my Fonts
 */
 $font-global: 'Anton', sans-serif;
-$font-secondary:'Oswald', sans-serif;
-.font-main 
-{
+$font-secondary: 'Oswald', sans-serif;
+
+.font-main {
     font-family: $font-global;
     font-weight: 400;
-    
+
     //size
 }
 
-.font-secondary
-{
+.font-secondary {
     font-family: $font-secondary;
     font-size: 16px;
 
 }
 
-.font-sm 
-{
+.font-sm {
     font-family: $font-secondary;
 }
 
@@ -41,16 +39,26 @@ body {
 
 body:not(.dark-mode-preloading) {
     transition: all 0.3s linear;
-  }
-  
-  
-  
-  body.light-mode {
+}
+
+
+
+body.light-mode {
     background-color: #dfe6e9;
     color: #2d3436;
-  }
+}
 
-  body.dark-mode {
+body.dark-mode {
     background-color: #111;
     color: #dfe6e9;
-  }
+}
+
+.heading-intro {
+    h1 {
+        background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
