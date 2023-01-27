@@ -82,6 +82,54 @@ export class ProjectsService {
       tags:["Javascript", "Bootstrap5"],
       imgUrl:"assets/img/weather.png",
       gitHubUrl:"https://bit.ly/3QVzt60"
+    },
+    {
+      id:this.GenerateId(),
+      title: "The Simple Landing Page Challenge",
+      info: "The Simple Landing Page Challenge is a web page built using Material Design and Bootstrap 5. It is designed to showcase a luxurious chauffeur service and serves as a user interface inspiration. The design of the page was inspired by Figma UI free kits and has been implemented using HTML and CSS. Landpages That Create By Using Material design And Bootstrap",
+      subTitle:"The page includes several sections",
+      keyFeatures:["A hero section with a full-width Two Columns Ttiles and image","A section displaying the different types of vehicles offered by the service","A section displaying customer testimonials","A section displaying the company's contact information and a contact form"],
+      philosophy:"The Simple Landing Page Challenge Philosophy",
+      summary: "The philosophy behind this landing page is to create a visually appealing and user-friendly interface that effectively showcases the luxurious chauffeur service. The design is inspired by Figma UI free kits and implemented using Material Design and Bootstrap 5, ensuring that the page is responsive and works well across different devices and screen sizes.In summary, The Simple Landing Page Challenge is a web page built using Material Design, Bootstrap 5 and implemented via HTML and CSS. It was created to showcase a luxurious chauffeur service and serves as a UI inspiration by Figma UI free kits. The page includes several sections that highlight the different types of vehicles, services, customer testimonials, and contact information. Its goal is to create a visually pleasing and easy-to-use interface that effectively promotes the service",
+      tags:["SCSS","Bootstrap"],
+      imgUrl:"assets/img/landpageOne.png",
+      gitHubUrl:"https://bit.ly/3XZxFvg"
+    },
+    {
+      id:this.GenerateId(),
+      title:"The Ableton Landing Page",
+      info:"The Ableton Landing Page Challenge is a front-end practice project that clones the Ableton website's landing page. The page is designed to showcase Ableton's features and services and is built using SCSS and Material Design Bootstrap version 5",
+      subTitle:"The page includes several sections",
+      keyFeatures:["A hero section with a full-width background image and an Ableton paragraph highlighting the company's mission","A section displaying the different features of Ableton, such as its software and hardware offerings, as well as its capabilities in music production and live performance","A section displaying customer testimonials and success stories","A footer section displaying the company's contact information and social media links"],
+      philosophy:"The Ableton Landing Page Challenge Philosophy",
+      summary:"The philosophy behind this landing page is to create a visually appealing and user-friendly interface that effectively showcases Ableton's features and services. The design is inspired by Material Design and Bootstrap 5, ensuring that the page is responsive and works well across different devices and screen sizes. The use of grid and flexbox allows the page to adapt to different screen sizes and orientations.In summary, The Ableton Landing Page Challenge is a front-end practice project that clones the Ableton website's landing page. It is built using SCSS and Material Design Bootstrap version 5 with an implementation of grid and flexbox for all devices and responsive design. The page includes several sections that highlight Ableton's features, customer testimonials, products and pricing plans, and contact information. Its goal is to create a visually pleasing and easy-to-use interface that effectively promotes Ableton's services",
+      tags:["MDBootstrap","SCSS"],
+      imgUrl:"assets/imglandpageTwo.png",
+      gitHubUrl:"https://bit.ly/3HeMe7q"
+    },
+    {
+      id:this.GenerateId(),
+      title:"The Simple Responsive Web",
+      info:"This simple web app is built using pure CSS, with CSS grid and flexbox to create a responsive design that adapts to different screen sizes and devices. The use of CSS grid and flexbox allows the developer to create a flexible layout that can adapt to different screen sizes and orientations, without the need for additional frameworks or libraries",
+      subTitle:"The key features of The Simple Responsive Web App",
+      keyFeatures:["Two pages: The main page and the about page","Hero section with a navigation button on the main page","Message section with black background and white background on the main page","Footer section on both main page and about page","Header image on about page","Article with grid images on about page","Built using pure CSS, with CSS grid and flexbox to create a responsive design that adapts to different screen sizes and devices","Demonstrates how pure CSS can be used to create a responsive design without the need for additional tools or frameworks"],
+      philosophy:"The Simple Responsive Web App Philosophy",
+      summary:"The philosophy behind this web app is to demonstrate how pure CSS can be used to create a responsive design. The developer aims to show that it's possible to create a responsive web design using only CSS, without the need for additional tools or frameworks.In summary, The Simple Responsive Web App is a minimalistic web application that consists of two pages: the main page and the about page. It's built using pure CSS and CSS grid and flexbox to create a responsive design that adapts to different screen sizes and devices. The main goal of this web app is to showcase how pure CSS can be used to implement responsive web design",
+      tags:["Grid","flex","Css"],
+      imgUrl:"assets/img/landpageThree.png",
+      gitHubUrl:"https://bit.ly/3JgCIDd"
+    },
+    {
+      id:this.GenerateId(),
+      title:"The Figma Music App Prototype",
+      info:"The Figma Music App Prototype is a minimalistic app prototype that is designed for music listening and discovery, it consist of only two sections, the hero section and albums section, it allows users to discover new music and explore different artists and bands, The user can preview a list of tracks of specific album, which allows them to decide which track they want to listen to",
+      subTitle:"The prototype that is designed for music listening and discovery. It has two main sections",
+      keyFeatures:["Hero section: A visually appealing and interactive section that showcases the app's main features and offers a quick overview of what the app has to offer","Albums section: Displays a list of albums by musicians or bands, the user can select an album to display a list of tracks and listen to them online"],
+      philosophy:"The Figma Music App Prototype Philosophy",
+      summary:"The app's philosophy is to provide a simple and easy-to-use interface for music discovery and listening. The app is designed to be minimalistic and user-friendly, making it easy to navigate and find the desired tracks. The albums section allows users to discover new music and explore different artists and bands. It allows users to preview a list of tracks of specific album, which allows them to decide which track they want to listen to",
+      tags:["Figma","Prototype"],
+      imgUrl:"assets/img/figma.png",
+      gitHubUrl:"https://bit.ly/3wCboIi"
     }
   ];
 
