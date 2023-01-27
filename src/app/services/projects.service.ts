@@ -30,7 +30,7 @@ export class ProjectsService {
       philosophy:"Front Desk Management System Philosophy",
       summary:"The Front Desk Management System philosophy is to utilize the best of Laravel's built-in features to create an efficient and user-friendly system. This includes utilizing the MVC model, authentication system, sessions, Laravel Query Builder, and Router Resource to create a system that is easy to use and understand. By following these principles, the system aims to make front desk management more efficient and organized for hotels and resorts",
       tags:["PHP","Laravel","MySQL"],
-      imgUrl:"asset/img/FDSystem.png",
+      imgUrl:"assets/img/fd.system.png",
       gitHubUrl:"https://bit.ly/3iYkNqf",
 
     },

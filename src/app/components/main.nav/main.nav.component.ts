@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DarkModeService } from 'angular-dark-mode';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './main.nav.component.html',
   styleUrls: ['./main.nav.component.scss']
 })

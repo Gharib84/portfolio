@@ -1,0 +1,16 @@
+<div class="mx-auto flex flex-wrap w-full justify-between">
+    <h1 class="text-slate-300 font-secondary w-full">
+        Featured projects
+    </h1>
+    <div class="card w-1/2" *ngFor="let project of myProjects()">
+        <div class="card-title">
+            <h1>
+                {{project.title}}
+            </h1>
+        </div>
+        <div class="card-img">
+            <img [src]="project.imgUrl" alt="">
+        </div>
+    </div>
+   
+</div>
