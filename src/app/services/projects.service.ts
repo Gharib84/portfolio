@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../models/project';
-import { Observable, from } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -135,8 +134,8 @@ export class ProjectsService {
 
   constructor() { }
 
-  projects(): Observable<Project[]> {
-    return from([this.Projects]);
+  projects() {
+    return this.Projects;
   }
 
   GenerateId(): number {
