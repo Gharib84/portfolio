@@ -77,6 +77,13 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
+
+    .arrow
+    {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid #1A1A1A;
+    }
 }
 
 body.dark-mode {
