@@ -3,57 +3,41 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
-
-
 /*
     my Fonts
 */
 $font-global: 'Anton', sans-serif;
 $font-secondary: 'Oswald', sans-serif;
-
 .font-main {
     font-family: $font-global;
     font-weight: 400;
-
-    //size
 }
-
 .font-secondary {
     font-family: $font-secondary;
     font-size: 16px;
-
 }
-
 .font-sm {
     font-family: $font-secondary;
 }
-
 /*
         main color 
 */
-
 body {
     background-color: #111;
 }
 
-
 body:not(.dark-mode-preloading) {
     transition: all 0.3s linear;
 }
-
-
-
 body.light-mode {
     background-color: #dfe6e9;
     color: #2d3436;
-
     .btn-email {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box, linear-gradient(90deg, rgba(210, 64, 116, 1) 0%, rgba(101, 24, 180, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d24074", endColorstr="#6518b4", GradientType=1);
         border: 2px solid transparent;
         color: #2d3436;
     }
-
     .btn-linkedIn {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
             linear-gradient(90deg, rgba(105, 100, 222, 1) 0%, rgba(252, 166, 233, 1) 100%);
@@ -61,7 +45,6 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
-
     .btn-upwork {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
             linear-gradient(90deg, rgba(244, 66, 108, 1) 0%, rgba(251, 242, 177, 1) 100%);
@@ -69,7 +52,6 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
-
     .btn-hub {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
             linear-gradient(90deg, rgba(210, 64, 116, 1) 0%, rgba(101, 24, 180, 1) 100%);
@@ -77,7 +59,6 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
-
     .arrow
     {
         border-left: 10px solid transparent;
@@ -85,12 +66,10 @@ body.light-mode {
         border-top: 15px solid #1A1A1A;
     }
 }
-
 body.dark-mode {
     background-color: #111;
     color: #dfe6e9;
 }
-
 .heading-intro {
     h1 {
         background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);

@@ -4,7 +4,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9358f7",endColorstr="#10d7e2",GradientType=1);     
     border: 2px solid transparent;
 }
-
 .btn-linkedIn
 {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
@@ -12,7 +11,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
     border: 2px solid transparent;
 }
-
 .btn-upwork
 {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
@@ -20,7 +18,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4426c",endColorstr="#fbf2b1",GradientType=1);     
     border: 2px solid transparent;
 }
-
 .btn-hub
 {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
@@ -28,7 +25,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d24074",endColorstr="#6518b4",GradientType=1);   
     border: 2px solid transparent;
 }
-
 .arrow {
     width: 0;
     height: 0;
@@ -36,7 +32,22 @@
     border-right: 10px solid transparent;
     border-top: 15px solid white;
     position: relative;
-    left: 40em;
+    left: 56em;
     top: 1.5em;
     scale: 2;
   }
+  @media (max-width: 800px) {
+    .btn-responsive {
+        max-width: 100vw;
+        width: 100vw;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #5b46f6 #1c1c1c;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding: 2rem 0rem;
+    }
+}
