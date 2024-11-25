@@ -1,3 +1,14 @@
-<div class="max-w-sm rounded overflow-hidden shadow-lg img-code">
-    
-</div>
+@for(experience of experiences; track experience){
+<div class="max-w-sm rounded overflow-hidden shadow-lg  h-screen"> 
+    <!-- Card Body -->
+    <div class="px-6 py-4">
+      <!-- Title -->
+      <h2 class="font-bold text-xl mb-2 font-main">{{experience.title}}</h2>
+  
+      <!-- Description -->
+      <p class="text-gray-700 text-base">
+        This is a description for the card. It contains a brief summary or details about the content.
+      </p>
+    </div>
+  </div>
+}

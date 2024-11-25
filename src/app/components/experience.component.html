@@ -3,22 +3,22 @@
     <div class="sub-section-experience lg:flex lg:flex-col gap-8" *ngFor="let experience of getDetails(); let i = index">
     <!-- Fixed height to match title -->
         @if(i === 0){
-          <h1 class="text-9xl text-pink-50 gradient font-bold lg:self-start">Experience</h1>
+          <h1 class="experience-h1 lg:text-9xl text-pink-50 gradient font-bold lg:self-start">Experience</h1>
         }
       <div class="lg:flex lg:flex-row lg:justify-start w-full gap-24 h-full mt-10 lg:ml-3">
         <!-- First Column: Experience Details -->
         <div class="details flex-grow">
-          <h1 class="text-2xl text-white">{{experience.title}} ({{experience.type}})</h1>
-          <p class="text-blue-500 lg:mb-3 lg:mt-3">Eko Okna / PL - Kornica</p>
-          <ul class="list-none flex flex-grow flex-col gap-2">
-            <li class="whitespace-nowrap before:content-['-'] before:mr-2 text-slate-400" *ngFor="let item of experience.tasks">
+          <h1 class="text-2xl text-white font-main">{{experience.title}} ({{experience.type}})</h1>
+          <p class="text-blue-500 lg:mb-3 lg:mt-3 font-sm">Eko Okna / PL - Kornica</p>
+          <ul class="list-none max-w-md space-y-1 flex flex-grow flex-col h-full gap-2">
+            <li class="font-secondary sm:whitespace-normal sm:text-left sm:leading-loose lg:whitespace-nowrap before:content-['-'] before:mr-2 text-slate-400" *ngFor="let item of experience.tasks">
               {{item}}
             </li>
           </ul>
         </div>
         
         <!-- Second Column: Date -->
-        <div class="date flex-shrink-0 lg:w-48 text-right">
+        <div class="date flex-shrink-0 text-left sm:text-right lg:w-48 font-sm">
           <span class="text-slate-400">{{experience.start}}-@if (experience.end == null) {
            <span>Present</span>
             }@else {

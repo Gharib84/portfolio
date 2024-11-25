@@ -6,7 +6,7 @@
         </span>
     </div>
     <div class="heading-intro mb-3 max-w-8xl px-4">
-        <h1 class="font-main text-9xl w-full gradient">
+        <h1 class="font-main sm:break-before-all text-9xl w-full gradient">
             Mahmoud Gharib Said Gharib
         </h1>
         <p class="font-secondary mb-2 py-5 text-left text-slate-400 w-full
@@ -25,8 +25,11 @@
     <section class="mx-auto w-full h-64 lg-flex xl:flex 2xl:flex lg:flex-row xl:flex-row 2xl:flex-row lg:items-end xl:items-end 2xl:items-end hidden sm:block" >
         <app-buttons></app-buttons>
     </section>
-    <section class="h-screen">
+    <section class="h-screen hidden sm:block experience-section">
         <app-experience></app-experience>
+    </section>
+    <section class=" h-screen lg:hidden">
+        <app-card></app-card>
     </section>
     <router-outlet></router-outlet>
 </div>
