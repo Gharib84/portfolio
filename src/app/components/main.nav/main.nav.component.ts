@@ -4,11 +4,10 @@ import { DarkModeService } from 'angular-dark-mode';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-nav',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './main.nav.component.html',
-  styleUrls: ['./main.nav.component.scss']
+    selector: 'app-nav',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './main.nav.component.html',
+    styleUrls: ['./main.nav.component.scss']
 })
 export class MainNavComponent {
 

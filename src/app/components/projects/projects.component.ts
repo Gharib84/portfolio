@@ -4,11 +4,10 @@ import { ProjectsService } from 'src/app/services/projects.service';
 import { CardComponent } from '../cards/card.component';
 import { ButtonsComponent } from '../buttons.component';
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [CommonModule,CardComponent,ButtonsComponent],
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+    selector: 'app-projects',
+    imports: [CommonModule, CardComponent],
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
 

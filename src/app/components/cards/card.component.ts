@@ -3,11 +3,10 @@ import { ExperienceComponent } from '../experience.component';
 import { CommonModule } from '@angular/common';
 import { Experience } from 'src/app/interfaces/experience';
 @Component({
-  selector: 'app-card',
-  standalone: true,
-  imports: [CommonModule, ExperienceComponent],
-  templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+    selector: 'app-card',
+    imports: [CommonModule],
+    templateUrl: './card.component.html',
+    styleUrl: './card.component.scss'
 })
 export class CardComponent implements OnInit, AfterViewInit, AfterViewChecked {
   @ViewChild(ExperienceComponent, { static: false }) exp!: ExperienceComponent;

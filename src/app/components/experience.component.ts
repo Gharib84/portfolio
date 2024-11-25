@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Experience } from '../interfaces/experience';
 import { CommonModule } from '@angular/common';
 @Component({
-  selector: 'app-experience',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss'
+    selector: 'app-experience',
+    imports: [CommonModule],
+    templateUrl: './experience.component.html',
+    styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent implements OnInit {
 
