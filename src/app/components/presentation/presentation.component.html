@@ -1,7 +1,7 @@
-<div class="intro container sm:container md:container mx-auto w-full h-screen 
-    py-28 lg:py-32">
-    <div class="sub-text font-sm mb-6 text-slate-500">
-        <span class="ml-5">
+<div class="intro container sm:container md:container mx-auto w-full lg:py-40
+    ">
+    <div class="sub-text font-sm mb-6 text-slate-400">
+        <span class="ml-5 text-slate-400">
             Hey I'm
         </span>
     </div>
@@ -9,7 +9,7 @@
         <h1 class="font-main sm:break-before-all text-9xl w-full gradient">
             Mahmoud Gharib Said Gharib
         </h1>
-        <p class="font-secondary mb-2 py-5 text-left text-slate-400 w-full
+        <p class="portfolio-type mb-2 py-5 text-left text-slate-400 w-full
             leading-normal lg:leading-loose">
             I’m currently a software engineer with two years of experience. 
             In my role, I have developed and built an ERP system for employees with thousands of users, 
@@ -25,11 +25,8 @@
     <section class="flex flex-row flex-nowrap lg:my-20" >
         <app-buttons></app-buttons>
     </section>
-    <section class="experience-section h-full">
-        <app-experience></app-experience>
-    </section>
-    <section class=" h-screen lg:hidden">
-        <app-card></app-card>
-    </section>
-    <router-outlet></router-outlet>
 </div>
+<section class="mt-20">
+    <app-experience></app-experience>
+</section>
+<router-outlet></router-outlet>

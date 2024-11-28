@@ -7,3 +7,60 @@
    object-fit:contain;
    cursor: pointer;
 }
+@media(max-width:800px){
+   .card
+   {
+      max-width: 100vw;
+      width:90vw;
+      margin: 1.5rem auto;
+      height: auto;
+      background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+      linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      .card-title
+      {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         h1 
+         {
+            font-size: 1.4rem;
+         }
+      }
+      .details
+      {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         height: 100%;
+         max-width: 100vw;
+         width: 100%;
+         .job-title 
+         {
+            position: relative;
+            left: 2px;
+            top: -10px;
+         }
+         .details-list
+         {
+            position: relative !important;
+            left: 20px;
+            max-width: 90vw;
+            width: 70vw;
+            li
+            {
+               line-height: 1.7;
+               word-wrap: break-word;
+               overflow-wrap: break-word;
+               text-align: left;
+            }
+         }
+      }
+   }
+}

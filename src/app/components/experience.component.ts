@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Experience } from '../interfaces/experience';
 import { CommonModule } from '@angular/common';
+import { CardComponent } from './cards/card.component';
 @Component({
     selector: 'app-experience',
-    imports: [CommonModule],
+    imports: [CommonModule,CardComponent],
     templateUrl: './experience.component.html',
     styleUrl: './experience.component.scss'
 })

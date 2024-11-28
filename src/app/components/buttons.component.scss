@@ -1,30 +1,31 @@
 .btn-email {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
-    linear-gradient(90deg, rgba(147,88,247,1) 0%, rgba(16,215,226,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9358f7",endColorstr="#10d7e2",GradientType=1);     
+        linear-gradient(90deg, rgba(147, 88, 247, 1) 0%, rgba(16, 215, 226, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9358f7", endColorstr="#10d7e2", GradientType=1);
     border: 2px solid transparent;
 }
-.btn-linkedIn
-{
+
+.btn-linkedIn {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
-    linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+        linear-gradient(90deg, rgba(105, 100, 222, 1) 0%, rgba(252, 166, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de", endColorstr="#fca6e9", GradientType=1);
     border: 2px solid transparent;
 }
-.btn-upwork
-{
+
+.btn-upwork {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
-    linear-gradient(90deg, rgba(244,66,108,1) 0%, rgba(251,242,177,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4426c",endColorstr="#fbf2b1",GradientType=1);     
+        linear-gradient(90deg, rgba(244, 66, 108, 1) 0%, rgba(251, 242, 177, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4426c", endColorstr="#fbf2b1", GradientType=1);
     border: 2px solid transparent;
 }
-.btn-hub
-{
+
+.btn-hub {
     background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
-    linear-gradient(90deg, rgba(210,64,116,1) 0%, rgba(101,24,180,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d24074",endColorstr="#6518b4",GradientType=1);   
+        linear-gradient(90deg, rgba(210, 64, 116, 1) 0%, rgba(101, 24, 180, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d24074", endColorstr="#6518b4", GradientType=1);
     border: 2px solid transparent;
 }
+
 .arrow {
     width: 0;
     height: 0;
@@ -32,11 +33,12 @@
     border-right: 10px solid transparent;
     border-top: 15px solid white;
     position: relative;
-    left: 56em;
+    left: 34em;
     top: 1.5em;
     scale: 2;
-  }
-  @media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
     .btn-responsive {
         max-width: 100vw;
         width: 100vw;
@@ -49,5 +51,6 @@
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
         padding: 2rem 0rem;
-    }
+        flex-shrink: 1;
+    } 
 }
