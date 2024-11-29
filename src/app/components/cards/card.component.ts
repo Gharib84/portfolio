@@ -40,7 +40,7 @@ export class CardComponent implements OnInit, AfterViewInit, AfterViewChecked {
     {
       platform: "Freelancer",
       type:"Remote",
-      title: "Software Engineer",
+      title: "FullStack Engineer",
       start: "Nov 2024",
       tasks: [
         "A full-stack progressive web application for booking travel trips online", "designed and developed from scratch using modern technologies."," This app allows users to browse book and manage travel trips effortlessly.",

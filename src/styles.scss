@@ -10,27 +10,30 @@
 */
 $font-global: 'Anton', sans-serif;
 $font-secondary: 'Oswald', sans-serif;
+
 .font-main {
     font-family: $font-global;
     font-weight: 400;
 }
+
 .font-secondary {
     font-family: $font-secondary;
     font-size: 16px;
 }
+
 .font-sm {
     font-family: $font-secondary;
 }
-.portfolio-type
-{
+
+.portfolio-type {
     font-family: "Poppins", serif;
     font-weight: 600;
     font-style: normal;
     line-height: 1.8;
 
 }
-.font-type-card
-{
+
+.font-type-card {
     font-family: "Poppins", serif;
     font-weight: 600;
     font-style: normal;
@@ -39,18 +42,19 @@ $font-secondary: 'Oswald', sans-serif;
     overflow-wrap: break-word;
     line-height: 1.8;
 }
-ul li::marker
-{
-    color: rgb(218,165,32) !important;
+
+ul li::marker {
+    color: rgb(218, 165, 32) !important;
 }
-.company-name
-{
+
+.company-name {
     font-size: 8vw !important;
 }
-ul.ul-responsive 
-{
+
+ul.ul-responsive {
     line-height: 1.8;
 }
+
 /*
         main color 
 */
@@ -61,15 +65,18 @@ body {
 body:not(.dark-mode-preloading) {
     transition: all 0.3s linear;
 }
+
 body.light-mode {
     background-color: #dfe6e9;
     color: #2d3436;
+
     .btn-email {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box, linear-gradient(90deg, rgba(210, 64, 116, 1) 0%, rgba(101, 24, 180, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d24074", endColorstr="#6518b4", GradientType=1);
         border: 2px solid transparent;
         color: #2d3436;
     }
+
     .btn-linkedIn {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
             linear-gradient(90deg, rgba(105, 100, 222, 1) 0%, rgba(252, 166, 233, 1) 100%);
@@ -77,6 +84,7 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
+
     .btn-upwork {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
             linear-gradient(90deg, rgba(244, 66, 108, 1) 0%, rgba(251, 242, 177, 1) 100%);
@@ -84,6 +92,7 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
+
     .btn-hub {
         background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
             linear-gradient(90deg, rgba(210, 64, 116, 1) 0%, rgba(101, 24, 180, 1) 100%);
@@ -91,17 +100,28 @@ body.light-mode {
         border: 2px solid transparent;
         color: #2d3436;
     }
-    .arrow
-    {
+
+    .arrow {
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-top: 15px solid #1A1A1A;
     }
+
+    article.card {
+        background: linear-gradient(#dfe6e9, #dfe6e9) padding-box,
+            linear-gradient(90deg, rgba(210, 64, 116, 1) 0%, rgba(101, 24, 180, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d24074", endColorstr="#6518b4", GradientType=1);
+        border: 2px solid transparent;
+        color: #2d3436;
+        font-weight: 700;
+    }
 }
+
 body.dark-mode {
     background-color: #111;
     color: #dfe6e9;
 }
+
 .heading-intro {
     h1 {
         background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
