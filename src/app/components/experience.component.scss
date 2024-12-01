@@ -26,7 +26,7 @@
     /* Your styles for small screens */
     .ex-title
     {
-        font-size: 16.5vw;
+        font-size: 16vw;
         max-width: 100vw;
         margin: 0 auto;
         position: relative;
@@ -42,8 +42,25 @@
     /* Your styles for medium screens */
     .ex-title
     {
-        font-size: 16.5vw;
-        max-width: 100vw;
+        font-size: 14vw;
+        max-width: 100%; 
+        margin: 0 auto;
+        position: relative;
+        left: 8px;
+        font-weight: bold;
+        overflow: hidden;
+        //padding: 100px 0px 0px 0px;
+    }
+    
+  }
+  
+  /* Large (lg) */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* Your styles for large screens */
+    .ex-title
+    {
+        font-size: 15vw;
+        max-width: 100%; 
         margin: 0 auto;
         position: relative;
         left: 8px;
@@ -53,17 +70,34 @@
     }
   }
   
-  /* Large (lg) */
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    /* Your styles for large screens */
-  }
-  
   /* Extra Large (xl) */
   @media (min-width: 1281px) and (max-width: 1536px) {
     /* Your styles for extra large screens */
+    .ex-title
+    {
+        font-size:15vw;
+        max-width: 100%; 
+        margin: 0 auto;
+        position: relative;
+        left: 8px;
+        font-weight: bold;
+        overflow: hidden;
+        //padding: 100px 0px 0px 0px;
+    }
   }
   
   /* 2XL (2xl) */
   @media (min-width: 1537px) {
     /* Your styles for 2XL screens and above */
+    .ex-title
+    {
+        font-size: 15vw;
+        max-width: 100%; 
+        margin: 0 auto;
+        position: relative;
+        left: 8px;
+        font-weight: bold;
+        overflow: hidden;
+        //padding: 100px 0px 0px 0px;
+    }
   }
