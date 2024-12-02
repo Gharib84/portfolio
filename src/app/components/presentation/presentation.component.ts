@@ -7,7 +7,7 @@ import { ExperienceComponent } from '../experience.component';
 import { CardComponent } from '../cards/card.component';
 @Component({
     selector: 'app-presentation',
-    imports: [CommonModule, RouterModule, ButtonsComponent, ExperienceComponent],
+    imports: [CommonModule, RouterModule, ButtonsComponent,CardComponent,ExperienceComponent],
     templateUrl: './presentation.component.html',
     styleUrls: ['./presentation.component.scss']
 })

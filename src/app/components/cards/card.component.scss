@@ -7,7 +7,69 @@
    object-fit:contain;
    cursor: pointer;
 }
-@media(max-width:800px){
+/* Extra Small (xs) */
+@media (max-width: 640px) {
+   /* Your styles for extra small screens */
+   .card
+   {
+      width:90vw;
+      margin: 1.5rem auto;
+      height: auto;
+      background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+      linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      padding: 1rem;
+      .card-title
+      {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         h1 
+         {
+            font-size: 1.4rem;
+         }
+      }
+      .details
+      {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         height: 100%;
+         max-width: 100vw;
+         width: 100%;
+         .job-title 
+         {
+            position: relative;
+            left: 2px;
+            top: -10px;
+         }
+         .details-list
+         {
+            position: relative !important;
+            left: 20px;
+            max-width: 90vw;
+            width: 70vw;
+            li
+            {
+               line-height: 1.7;
+               word-wrap: break-word;
+               overflow-wrap: break-word;
+               text-align: left;
+            }
+         }
+      }
+   }
+ }
+ 
+ /* Small (sm) */
+ @media (min-width: 641px) and (max-width: 768px) {
+   /* Your styles for small screens */
    .card
    {
       max-width: 100vw;
@@ -63,4 +125,266 @@
          }
       }
    }
-}
+ }
+ 
+ /* Medium (md) */
+ @media (min-width: 769px) and (max-width: 1024px) {
+   /* Your styles for medium screens */
+   .card
+   {
+      max-width: 100vw;
+      width:90vw;
+      margin: 1.5rem auto;
+      height: auto;
+      background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+      linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      .card-title
+      {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         h1 
+         {
+            font-size: 1.4rem;
+         }
+      }
+      .details
+      {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         height: 100%;
+         max-width: 100vw;
+         width: 100%;
+         .job-title 
+         {
+            position: relative;
+            left: 2px;
+            top: -10px;
+         }
+         .details-list
+         {
+            position: relative !important;
+            left: 20px;
+            max-width: 90vw;
+            width: 70vw;
+            li
+            {
+               line-height: 1.7;
+               word-wrap: break-word;
+               overflow-wrap: break-word;
+               text-align: left;
+            }
+         }
+      }
+   }
+ }
+ 
+ /* Large (lg) */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+   /* Your styles for large screens */
+   .card
+   {
+      max-width: 100vw;
+      width:90vw;
+      margin: 1.5rem auto;
+      height: auto;
+      background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+      linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      .card-title
+      {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         h1 
+         {
+            font-size: 1.4rem;
+         }
+      }
+      .details
+      {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         height: 100%;
+         max-width: 100vw;
+         width: 100%;
+         .job-title 
+         {
+            position: relative;
+            left: 2px;
+            top: -10px;
+         }
+         .details-list
+         {
+            position: relative !important;
+            left: 20px;
+            max-width: 90vw;
+            width: 70vw;
+            li
+            {
+               line-height: 1.7;
+               word-wrap: break-word;
+               overflow-wrap: break-word;
+               text-align: left;
+            }
+         }
+      }
+   }
+ }
+ 
+ /* Extra Large (xl) */
+ @media (min-width: 1281px) and (max-width: 1536px) {
+   /* Your styles for extra large screens */
+   .card
+   {
+      max-width: 100vw;
+      width:90vw;
+      margin: 1.5rem auto;
+      height: auto;
+      background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+      linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      .card-title
+      {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         h1 
+         {
+            font-size: 1.4rem;
+         }
+      }
+      .details
+      {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         height: 100%;
+         max-width: 100vw;
+         width: 100%;
+         .job-title 
+         {
+            position: relative;
+            left: 2px;
+            top: -10px;
+         }
+         .details-list
+         {
+            position: relative !important;
+            left: 20px;
+            max-width: 90vw;
+            width: 70vw;
+            li
+            {
+               line-height: 1.7;
+               word-wrap: break-word;
+               overflow-wrap: break-word;
+               text-align: left;
+            }
+         }
+      }
+   }
+ }
+ 
+ /* 2XL (2xl) */
+ @media (min-width: 1537px) {
+   /* Your styles for 2XL screens and above */
+   .card
+   {
+      width:100vw;
+      height: auto;
+      background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+      linear-gradient(90deg, rgba(105,100,222,1) 0%, rgba(252,166,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de",endColorstr="#fca6e9",GradientType=1);
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      padding: 5rem;
+      position: relative;
+      right: 1vw;
+      margin-top: 10vw;
+      .card-title
+      {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         width: 100%;
+         h1 
+         {
+            font-size: 1.4rem;
+         }
+      }
+      .details
+      {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         height: 100%;
+         max-width: 100vw;
+         width: 100%;
+         .job-title 
+         {
+            position: relative;
+            left: 2px;
+            top: -10px;
+         }
+         .details-list
+         {
+            position: relative !important;
+            left: 20px;
+            max-width: 90vw;
+            width: 70vw;
+            li
+            {
+               line-height: 1.7;
+               word-wrap: break-word;
+               overflow-wrap: break-word;
+               text-align: left;
+            }
+         }
+      }
+      .fa-coffee
+      {
+         display: none;
+      }
+      .date
+      {
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         align-items: center;
+         .start-date
+         {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+         }
+      }
+   }
+ }
+ 
