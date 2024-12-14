@@ -48,14 +48,25 @@
         overflow-x: auto;
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 5px;
         scrollbar-width: thin;
         scrollbar-color: #5b46f6 #1c1c1c;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
-        padding: 2rem 0rem;
+        padding: 2rem 0;
         flex-shrink: 0;
+        padding-left: 1rem;
+        padding-right: 1rem; 
     }
+    
+    .btn-responsive button:first-child {
+        margin-left: 1rem;
+    }
+    
+    .btn-responsive button:last-child {
+        margin-right: 1rem;
+    }
+    
 }
 
 /* Small (sm) */
