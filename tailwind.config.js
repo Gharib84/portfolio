@@ -5,7 +5,16 @@ module.exports = {
     "./components/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '400px',
+        'sm': '641px',
+        'md': '769px',
+        'lg': '1025px',
+        'xl': '1281px',
+        '2xl': '1537px'
+      }
+    },
   },
   plugins: [],
 }

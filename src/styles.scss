@@ -57,8 +57,11 @@ ul.ul-responsive {
 /*
         main color 
 */
+@layer base{
 body {
     background-color: #111;
+    @apply mx-auto w-full;
+}
 }
 
 body:not(.dark-mode-preloading) {
