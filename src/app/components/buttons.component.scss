@@ -128,10 +128,7 @@
         margin: 0 auto;
 
         .arrow {
-            align-self: self-start;
-            position: relative;
-            top: 100px;
-            left: 50%;
+            display: none;
         }
         .btn-item{
             flex: 1;
@@ -154,10 +151,11 @@
         margin: 0 auto;
 
         .arrow {
-            align-self: self-start;
-            position: relative;
-            top: 22vh;
-            left: 50vw;
+           // align-self: self-start;
+            //position: relative;
+            //top: 22vh;
+            //left: 50vw;
+            display: none;
         }
     }
 }
