@@ -18,7 +18,40 @@
         background-clip: text;
     }
 
-    section.main {
-        @apply w-full mx-auto;
+    .main {
+        @apply mx-auto;
+        position: relative;
+        max-width: 80%;
+        right: 1vw;
+
+    }
+
+    label {
+        @apply block text-left text-xl font-bold mt-2 text-slate-400 mb-5;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    input {
+        @apply shadow border rounded w-full py-2 px-3 text-gray-100;
+        background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+            linear-gradient(90deg, rgba(105, 100, 222, 1) 0%, rgba(252, 166, 233, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de", endColorstr="#fca6e9", GradientType=1);
+        border: 2px solid transparent;
+    }
+
+    input:focus {
+        @apply outline-none;
+    }
+
+    textarea {
+        background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
+            linear-gradient(90deg, rgba(105, 100, 222, 1) 0%, rgba(252, 166, 233, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de", endColorstr="#fca6e9", GradientType=1);
+        border: 2px solid transparent;
+        @apply text-gray-100 p-5;
+    }
+    textarea:focus
+    {
+        @apply outline-none;
     }
 }
