@@ -32,7 +32,7 @@
     }
 
     input {
-        @apply shadow border rounded w-full py-2 px-3 text-gray-100;
+        @apply shadow border rounded w-full py-5 px-3 text-gray-100;
         background: linear-gradient(#1A1A1A, #1A1A1A) padding-box,
             linear-gradient(90deg, rgba(105, 100, 222, 1) 0%, rgba(252, 166, 233, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6964de", endColorstr="#fca6e9", GradientType=1);
@@ -53,5 +53,13 @@
     textarea:focus
     {
         @apply outline-none;
+    }
+    button
+    {
+        @apply  w-full font-bold py-6 text-lg text-white;
+        font-family: 'Oswald', sans-serif;
+        background: rgb(164,0,255);
+        background: linear-gradient(90deg, rgba(164,0,255,1) 0%, rgba(241,19,238,1) 34%);         
+       
     }
 }
