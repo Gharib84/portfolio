@@ -6,7 +6,7 @@
 
 @layer components {
     section {
-        @apply flex flex-row justify-center items-center h-screen;
+        @apply flex flex-row justify-center items-center h-custom lg:h-screen;
     }
 
     h1 {
