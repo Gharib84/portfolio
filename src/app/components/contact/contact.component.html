@@ -3,18 +3,18 @@
 </section>
 <div class="main">
     <div class="container">
-        <form action="" class="shadow-md rounded  px-8 pt-6 pb-8 mb-4">
+        <form action="" class="shadow-md rounded  px-8 pt-6 pb-8 mb-4" [formGroup]="information">
             <div class="mb-4">
                 <label for="company-name">Company Name</label>
-                <input type="text" name="company-name">
+                <input type="text" name="company-name" formControlName="companyName">
             </div>
             <div class="mt-8 mb-4">
                 <label for="phone-number">Phone Number</label>
-                <input type="text" name="phone-number">
+                <input type="text" name="phone-number" formControlName="phone">
             </div>
             <div class="mt-8 mb-4">
                 <label for="message">Message</label>
-                <textarea class="w-full" name="message" id="message" rows="20" cols="50"></textarea>
+                <textarea class="w-full" name="message" id="message" rows="20" cols="50" formControlName="message"></textarea>
             </div>
             <div class="mt-8 mb-4">
                 <button>Send</button>
