@@ -3,21 +3,42 @@
 </section>
 <div class="main">
     <div class="container">
-        <form action="" class="shadow-md rounded  px-8 pt-6 pb-8 mb-4" [formGroup]="information">
+        <form action="" class="shadow-md rounded  px-8 pt-6 pb-8 mb-4" [formGroup]="information" (ngSubmit)="onSubmit()">
             <div class="mb-4">
                 <label for="company-name">Company Name</label>
                 <input type="text" name="company-name" formControlName="companyName">
             </div>
+            @if (information.get("companyName")?.dirty && information.get("companyName")?.hasError('required')) {
+                 <div class="error">
+                    Company Name is required.
+                 </div>   
+            }
             <div class="mt-8 mb-4">
                 <label for="phone-number">Phone Number</label>
                 <input type="text" name="phone-number" formControlName="phone">
             </div>
+            @if (information.get("phone")?.dirty && information.get("phone")?.hasError('invalidPhoneNumber')) {
+                <div class="error">
+                    Phone number is not valid please check. 
+                </div>
+            }
+            @if (information.get("phone")?.dirty && information.get("phone")?.hasError('required')) {
+                <div class="error">
+                    Phone number is required. 
+                </div>
+            }
+
             <div class="mt-8 mb-4">
                 <label for="message">Message</label>
                 <textarea class="w-full" name="message" id="message" rows="20" cols="50" formControlName="message"></textarea>
             </div>
+            @if (information.get("message")?.dirty && information.get("message")?.hasError('required')) {
+                <div class="error">
+                     Message is required. 
+                </div>
+            }
             <div class="mt-8 mb-4">
-                <button>Send</button>
+                <button type="submit" [disabled]="information.invalid">Send</button>
             </div>
         </form>
     </div>

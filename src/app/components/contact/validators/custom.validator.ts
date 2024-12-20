@@ -4,7 +4,7 @@ export function validatePhoneNumber():ValidatorFn
 {
     return (fromControlValue:AbstractControl):ValidationErrors | null => {
         const phoneNumber = fromControlValue.value;
-        const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+        const phoneRegex = /(\(\d{3}\)\d{3}-\d{4}|\+\d{11})/;
 
         if(!phoneNumber) return null;
         const isValid = phoneRegex.test(phoneNumber);

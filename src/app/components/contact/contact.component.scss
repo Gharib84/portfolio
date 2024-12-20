@@ -54,12 +54,15 @@
     {
         @apply outline-none;
     }
-    button
+    button[type='submit']
     {
         @apply  w-full font-bold py-6 text-lg text-white;
         font-family: 'Oswald', sans-serif;
         background: rgb(164,0,255);
         background: linear-gradient(90deg, rgba(164,0,255,1) 0%, rgba(241,19,238,1) 34%);         
-       
+    }
+    .error 
+    {
+        @apply text-pink-600 font-bold
     }
 }
