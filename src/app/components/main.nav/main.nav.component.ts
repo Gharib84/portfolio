@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DarkModeService } from 'angular-dark-mode';
 import { RouterModule } from '@angular/router';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
     selector: 'app-nav',

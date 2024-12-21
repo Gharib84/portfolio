@@ -2,11 +2,20 @@ import { Component,OnInit } from '@angular/core';
 import { FormBuilder,FormControl,FormGroup,ReactiveFormsModule,Validator, Validators } from '@angular/forms';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { validatePhoneNumber } from './validators/custom.validator';
+import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   selector: 'app-contact',
   imports: [ReactiveFormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1s', style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class ContactComponent implements OnInit {
   information:FormGroup;
