@@ -1,6 +1,4 @@
 import { Component,OnInit } from '@angular/core';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -10,7 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export class AppComponent implements OnInit {
   title = 'portfolio';
 
-  ngOnInit(): void {
-    gsap.registerPlugin(ScrollTrigger) 
-  }
+  ngOnInit(): void {}
+
 }
