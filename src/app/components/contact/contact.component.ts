@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef,Renderer2, inject } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validator, Validators } from '@angular/forms';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { validatePhoneNumber } from './validators/custom.validator';
@@ -21,8 +21,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 })
 export class ContactComponent implements OnInit {
   information: FormGroup;
-  @ViewChild('contacts', { static: false }) contacts!: ElementRef;
-  private scrollTriggers: ScrollTrigger[] = [];
+  private el = inject(ElementRef);
+  private render = inject(Renderer2);
   constructor(private fb: FormBuilder) {
     this.information = this.fb.group({
       companyName: [" ", [Validators.required]],
