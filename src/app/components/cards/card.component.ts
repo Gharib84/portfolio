@@ -5,9 +5,10 @@ import { Experience } from 'src/app/interfaces/experience';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faCalendar, faCheck,faPersonRunning } from '@fortawesome/free-solid-svg-icons';
+import { FadeInDirective } from '../contact/directives/fade-in.directive';
 @Component({
     selector: 'app-card',
-    imports: [CommonModule,FontAwesomeModule],
+    imports: [CommonModule,FontAwesomeModule,FadeInDirective],
     templateUrl: './card.component.html',
     styleUrl: './card.component.scss'
 })

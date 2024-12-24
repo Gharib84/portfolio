@@ -7,6 +7,17 @@
    cursor: pointer;
 }
 
+.fade-in-element {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+   will-change: opacity, transform;
+}
+.fade-in-element.show {
+   opacity: 1;
+   transform: translateY(0);
+}
+
 /* Extra Small (xs) */
 @media (max-width: 640px) {
 
@@ -66,8 +77,8 @@
             }
          }
       }
-      .fa-coffee
-      {
+
+      .fa-coffee {
          font-size: 5vw;
       }
    }
@@ -133,6 +144,7 @@
             }
          }
       }
+
       .fa-coffee {
          font-size: 5vw;
       }
@@ -265,8 +277,8 @@
             }
          }
       }
-      .fa-coffee
-      {
+
+      .fa-coffee {
          font-size: 5vw;
       }
    }
@@ -332,8 +344,8 @@
             }
          }
       }
-      .fa-coffee
-      {
+
+      .fa-coffee {
          font-size: 5vw;
       }
    }
