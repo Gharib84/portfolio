@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsService } from 'src/app/services/projects.service';
-import { CardComponent } from '../cards/card.component';
 import { ButtonsComponent } from '../buttons.component';
 @Component({
     selector: 'app-projects',
-    imports: [CommonModule, CardComponent],
+    imports: [CommonModule],
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.scss']
 })
