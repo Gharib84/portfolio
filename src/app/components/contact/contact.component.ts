@@ -6,9 +6,10 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FadeInDirective } from './directives/fade-in.directive';
+import { TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-contact',
-  imports: [ReactiveFormsModule,FadeInDirective],
+  imports: [ReactiveFormsModule,FadeInDirective,TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   animations: [

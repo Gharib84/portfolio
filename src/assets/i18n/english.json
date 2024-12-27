@@ -1,0 +1,13 @@
+{
+    "INTRO": {
+        "GREETING": "Hey I'm",
+        "NAME": "Mahmoud Gharib Said Gharib",
+        "DESCRIPTION": "I’m currently a software engineer with two years of experience. In my role, I have developed and built an ERP system for employees with thousands of users, collaborating closely with cross-functional teams to ensure seamless performance and user experience. I have strong skills in both backend and frontend technologies, including Nest.js, Symfony, and Angular. My programming expertise spans TypeScript, PHP, Zig, and Python, with proficiency in working with both SQL and NoSQL databases. Additionally, I’m skilled in using Docker for containerization and environment management. I completed a vocational school program in Computer Science in Poland and am excited to bring my skills and experience to new opportunities.",
+        "EXPERIENCE": "Experience",
+        "CONTACT": "Contact",
+        "COMPANY": "Company Name",
+        "PHONE": "Phone Number",
+        "MESSAGE": "Message",
+        "SEND": "Send"
+    }
+}

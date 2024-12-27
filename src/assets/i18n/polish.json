@@ -1,0 +1,13 @@
+{
+    "INTRO": {
+        "GREETING": "Hej Tam!",
+        "NAME": "Mahmoud Gharib Said Gharib",
+        "DESCRIPTION": "Obecnie jestem fullstack inżynierem oprogramowania z dwuletnim doświadczeniem.W mojej roli opracowałem i zbudowałem system ERP dla pracowników, obsługujący tysiące użytkowników, współpracując blisko z zespołami międzyfunkcyjnymi, aby zapewnić płynne działanie i doskonałe doświadczenia użytkowników.Mam silne umiejętności zarówno w technologiach backendowych, jak i frontendowych, w tym Nest.js, Symfony i Angular. Moja wiedza programistyczna obejmuje TypeScript, PHP, Zig i Python, a także biegłość w pracy z bazami danych SQL i NoSQL.Dodatkowo posiadam umiejętności w korzystaniu z Dockera do konteneryzacji i zarządzania środowiskiem.Ukończyłem szkołę zawodową z informatyki w Polsce i jestem podekscytowany możliwością wykorzystania moich umiejętności i doświadczenia w nowych projektach i możliwościach.",
+        "EXPERIENCE": "doświadczenie",
+        "CONTACT": "Kontakt",
+        "COMPANY": "Firma",
+        "PHONE": "Numer Telefonu",
+        "MESSAGE": "Wiadomość",
+        "SEND": "Prześlij"
+    }
+}

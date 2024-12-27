@@ -1,11 +1,11 @@
 <section id="contact">
-    <h1 class="fade-in-element" appFadeIn>Contact</h1>
+    <h1 class="fade-in-element" appFadeIn>{{'INTRO.CONTACT' | translate}}</h1>
 </section>
 <div class="main fade-in-element" appFadeIn>
     <div class="container">
         <form action="" class="shadow-md rounded  px-8 pt-6 pb-8 mb-4" [formGroup]="information" (ngSubmit)="onSubmit()">
             <div class="mb-4">
-                <label for="company-name">Company Name</label>
+                <label for="company-name">{{'INTRO.COMPANY' | translate}}</label>
                 <input type="text" name="company-name" formControlName="companyName">
             </div>
             @if (information.get("companyName")?.dirty && information.get("companyName")?.hasError('required')) {
@@ -14,7 +14,7 @@
                  </div>   
             }
             <div class="mt-8 mb-4">
-                <label for="phone-number">Phone Number</label>
+                <label for="phone-number">{{'INTRO.PHONE' | translate}}</label>
                 <input type="text" name="phone-number" formControlName="phone">
             </div>
             @if (information.get("phone")?.dirty && information.get("phone")?.hasError('invalidPhoneNumber')) {
@@ -29,7 +29,7 @@
             }
 
             <div class="mt-8 mb-4">
-                <label for="message">Message</label>
+                <label for="message">{{'INTRO.MESSAGE' | translate}}</label>
                 <textarea class="w-full" name="message" id="message" rows="20" cols="50" formControlName="message"></textarea>
             </div>
             @if (information.get("message")?.dirty && information.get("message")?.hasError('required')) {
@@ -38,7 +38,7 @@
                 </div>
             }
             <div class="mt-8 mb-4">
-                <button type="submit" [disabled]="information.invalid">Send</button>
+                <button type="submit" [disabled]="information.invalid">{{'INTRO.SEND' | translate}}</button>
             </div>
         </form>
     </div>

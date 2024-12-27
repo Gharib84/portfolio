@@ -4,18 +4,28 @@ import { EnglishComponent } from './components/english/english.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { TranslateModule, TranslatePipe,TranslateLoader } from '@ngx-translate/core';
+import translateMetaData from './shared/translate.metaData';
+import { PresentationComponent } from './components/presentation/presentation.component';
+import { provideHttpClient } from '@angular/common/http';
+import { ExperienceComponent } from './components/experience.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    ExperienceComponent,
+    PresentationComponent,
+    ContactComponent,
     AppRoutingModule,
     EnglishComponent,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TranslatePipe,
+    TranslateModule.forRoot(translateMetaData),
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

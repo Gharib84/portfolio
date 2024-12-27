@@ -3,9 +3,10 @@ import { Experience } from '../interfaces/experience';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './cards/card.component';
 import { FadeInDirective } from './contact/directives/fade-in.directive';
+import { TranslatePipe } from '@ngx-translate/core';
 @Component({
     selector: 'app-experience',
-    imports: [CommonModule,FadeInDirective],
+    imports: [CommonModule,FadeInDirective,TranslatePipe],
     templateUrl: './experience.component.html',
     styleUrl: './experience.component.scss'
 })
