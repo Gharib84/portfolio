@@ -10,6 +10,7 @@ import { PresentationComponent } from './components/presentation/presentation.co
 import { provideHttpClient } from '@angular/common/http';
 import { ExperienceComponent } from './components/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CardComponent } from './components/cards/card.component';
 @NgModule({
   declarations: [
     AppComponent
@@ -24,6 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserAnimationsModule,
     TranslatePipe,
     TranslateModule.forRoot(translateMetaData),
+    CardComponent
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]

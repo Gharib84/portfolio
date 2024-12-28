@@ -1,7 +1,9 @@
-@for (work of wroks; track $index) {
+@for (work of works; track $index) {
 @let myDate = work.start;
 @let endDate = work.end;
-<article class="container card w-full mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-0 mb-20 fade-in-element" appFadeIn id="special-card">
+<article
+    class="container card w-full mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-0 mb-20 fade-in-element"
+    appFadeIn id="special-card">
     <header class="card-title flex justify-between items-center w-full py-5">
         <div class="title flex items-center gap-2">
             <fa-icon [icon]="faBriefcase" class="fa-solid fa-coffee fa-xl text-slate-400"></fa-icon>
@@ -16,12 +18,12 @@
         <div class="date flex flex-col lg:flex-row items-center lg:inline-block gap-2 text-slate-400">
             <div class="flex flex-row flex-nowrap w-full justify-between items-center gap-x-2 h-full start-date">
                 <fa-icon [icon]="faCalendar" aria-hidden="true" class="text-state-400"></fa-icon>
-                <time datetime="Mar 2023">{{work.start}}</time>
+                <time [attr.datetime]="work.start">{{work.start}}</time>
             </div>
             @if (endDate) {
             <div class="flex flex-row flex-nowrap w-full justify-between items-center gap-x-1 text-state-400">
                 <fa-icon [icon]="faPersonRunning" aria-hidden="true" class="text-state-400"></fa-icon>
-                <time datetime="Mar 2023">{{work.end}}</time>
+                <time [attr.datetime]="work.end">{{work.end}}</time>
             </div>
             }
         </div>
@@ -30,9 +32,13 @@
         <h3 class="job-title flex items-center text-blue-500">
             <fa-icon class="text-green-500 mr-5 ml-1 text-state-400" [icon]="faCheck" aria-hidden="true"></fa-icon>
             @if (myDate == "Nov 2024") {
-            {{work.title}}
+            {{'INTRO.WORKS.TITLE.FULLSTACK' | translate:{
+            title: work.title | translate
+            } }}
             }@else {
-            {{work.title}}
+            {{'INTRO.WORKS.TITLE.FULLSTACK' | translate:{
+            title: work.title | translate
+            } }}
             }
         </h3>
         <ul class="details-list list-disc pl-5 py-2 font-card-type leading-normal ul-responsive">

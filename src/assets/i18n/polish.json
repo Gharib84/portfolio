@@ -1,13 +1,56 @@
 {
-    "INTRO": {
-        "GREETING": "Hej Tam!",
-        "NAME": "Mahmoud Gharib Said Gharib",
-        "DESCRIPTION": "Obecnie jestem fullstack inżynierem oprogramowania z dwuletnim doświadczeniem.W mojej roli opracowałem i zbudowałem system ERP dla pracowników, obsługujący tysiące użytkowników, współpracując blisko z zespołami międzyfunkcyjnymi, aby zapewnić płynne działanie i doskonałe doświadczenia użytkowników.Mam silne umiejętności zarówno w technologiach backendowych, jak i frontendowych, w tym Nest.js, Symfony i Angular. Moja wiedza programistyczna obejmuje TypeScript, PHP, Zig i Python, a także biegłość w pracy z bazami danych SQL i NoSQL.Dodatkowo posiadam umiejętności w korzystaniu z Dockera do konteneryzacji i zarządzania środowiskiem.Ukończyłem szkołę zawodową z informatyki w Polsce i jestem podekscytowany możliwością wykorzystania moich umiejętności i doświadczenia w nowych projektach i możliwościach.",
-        "EXPERIENCE": "doświadczenie",
-        "CONTACT": "Kontakt",
-        "COMPANY": "Firma",
-        "PHONE": "Numer Telefonu",
-        "MESSAGE": "Wiadomość",
-        "SEND": "Prześlij"
+  "INTRO": {
+    "GREETING": "Hej Tam!",
+    "NAME": "Mahmoud Gharib Said Gharib",
+    "DESCRIPTION": "Obecnie jestem fullstack inżynierem oprogramowania z dwuletnim doświadczeniem.W mojej roli opracowałem i zbudowałem system ERP dla pracowników, obsługujący tysiące użytkowników, współpracując blisko z zespołami międzyfunkcyjnymi, aby zapewnić płynne działanie i doskonałe doświadczenia użytkowników.Mam silne umiejętności zarówno w technologiach backendowych, jak i frontendowych, w tym Nest.js, Symfony i Angular. Moja wiedza programistyczna obejmuje TypeScript, PHP, Zig i Python, a także biegłość w pracy z bazami danych SQL i NoSQL.Dodatkowo posiadam umiejętności w korzystaniu z Dockera do konteneryzacji i zarządzania środowiskiem.Ukończyłem szkołę zawodową z informatyki w Polsce i jestem podekscytowany możliwością wykorzystania moich umiejętności i doświadczenia w nowych projektach i możliwościach.",
+    "EXPERIENCE": "doświadczenie",
+    "CONTACT": "Kontakt",
+    "COMPANY": "Firma",
+    "PHONE": "Numer Telefonu",
+    "MESSAGE": "Wiadomość",
+    "SEND": "Prześlij",
+    "WORK": {
+      "EKO_OKNA": {
+        "TASKS": [
+          "Współpraca z zespołami międzyfunkcyjnymi w celu projektowania, rozwijania i utrzymania systemu ERP.",
+          "Praca z technologiami takimi jak HTML, CSS, JavaScript w celu tworzenia dynamicznych, responsywnych interfejsów użytkownika.",
+          "Opracowanie i optymalizacja logiki po stronie serwera przy użyciu Symfony i PHP w celu poprawy wydajności i skalowalności.",
+          "Integracja baz danych, takich jak MySQL, PostgreSQL, MongoDB, i zapewnienie płynnej komunikacji między frontendem a backendem.",
+          "Wykorzystanie interfejsów RESTful i bibliotek zewnętrznych w celu zwiększenia funkcjonalności i integracji zewnętrznych usług.",
+          "Udział w przeglądach kodu i współpraca z doświadczonymi programistami w celu przestrzegania najlepszych praktyk w rozwoju oprogramowania.",
+          "Korzystanie z systemów kontroli wersji (np. Git) w celu zarządzania i dokumentowania przepływów pracy programistycznej.",
+          "Pomoc w debugowaniu i rozwiązywaniu problemów w całym stosie, zarówno po stronie klienta, jak i serwera.",
+          "Praca w środowisku Agile, udział w sprintach oraz codziennych spotkaniach stand-up, retrospektywach i planowaniu sprintów."
+        ],
+        "DATES": {
+          "START": "mrz 2023",
+          "END": "Lis 2024 "
+      }
+      },
+      "FREELANCER": {
+        "TASKS": [
+          "Progresywna aplikacja internetowa do rezerwacji wycieczek.",
+          "Zaprojektowana i opracowana od podstaw przy użyciu nowoczesnych technologii.",
+          "Aplikacja umożliwia użytkownikom przeglądanie, rezerwację i zarządzanie wycieczkami w łatwy sposób.",
+          "Zbudowana z: Angular (18+), NestJS, TypeORM, MySQL, Swagger, Material Design, Spartan UI.",
+          "Frontend: Zaimplementowano responsywny i intuicyjny interfejs użytkownika przy użyciu Angulara,TailwindCss i spójne doświadczenie na różnych urządzeniach.",
+          "Backend: Rozwinięto API RESTful przy użyciu NestJS i TypeORM z MySQL w celu trwałości danych.",
+          "Wykorzystano interfejsy RESTful i zewnętrzne biblioteki w celu zwiększenia funkcjonalności i integracji.",
+          "Backend: Rozwinięto API RESTful przy użyciu NestJS i TypeORM z MySQL w celu trwałości danych.",
+          "Dokumentacja API: Zaprojektowano i udokumentowano całe API od podstaw przy użyciu Swaggera w celu lepszej współpracy programistycznej.",
+          "Progresywna aplikacja internetowa (PWA): Włączono możliwości offline i powiadomienia push, zapewniając użytkownikom doświadczenie zbliżone do aplikacji natywnej.",
+          "Pokonane wyzwania: Optymalizacja wydajności dla dużych zbiorów danych i zarządzanie złożonymi przepływami rezerwacji."
+        ],
+        "DATES": {
+          "START": "mrz 2024",
+          "END": ""
+      }
+      }
+    },
+    "WORKS": {
+        "TITLE":{
+          "FULLSTACK": "FullStack Inżynier"
+        }
     }
+  }
 }
