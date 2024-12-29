@@ -9,6 +9,7 @@
     "PHONE": "Numer Telefonu",
     "MESSAGE": "Wiadomość",
     "SEND": "Prześlij",
+    "PROJECTS":"Projekty",
     "WORK": {
       "EKO_OKNA": {
         "TASKS": [
@@ -24,7 +25,15 @@
         ],
         "DATES": {
           "START": "mrz 2023",
-          "END": "Lis 2024 "
+          "END": "List 2024 "
+        },
+        "COMPANY": "Eko Okna S.A.",
+        "TITLE": {
+          "JOB": "FullStack Inżynier"
+        },
+        "PERIOD": {
+          "START": "mrz 2023",
+          "END": "List 2024 "
       }
       },
       "FREELANCER": {
@@ -42,15 +51,18 @@
           "Pokonane wyzwania: Optymalizacja wydajności dla dużych zbiorów danych i zarządzanie złożonymi przepływami rezerwacji."
         ],
         "DATES": {
-          "START": "mrz 2024",
+          "START": "List 2024",
           "END": ""
+        },
+        "platform": "Freelancer",
+        "TITLE": {
+          "JOB": "FullStack Inżynier"
+        },
+        "PERIOD": {
+          "START": "List 2024",
+          "END": null
       }
       }
-    },
-    "WORKS": {
-        "TITLE":{
-          "FULLSTACK": "FullStack Inżynier"
-        }
     }
   }
 }

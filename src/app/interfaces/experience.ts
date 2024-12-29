@@ -1,9 +1,9 @@
 export interface Experience {
-    company?: string;
-    platform?: string;
+    company?: any;
+    platform?: any;
     type:string;
     title: string;
-    start: string;
-    end?: string;
+    start: any;
+    end?: any;
     tasks: string[];
 }

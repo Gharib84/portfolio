@@ -9,21 +9,21 @@
             <fa-icon [icon]="faBriefcase" class="fa-solid fa-coffee fa-xl text-slate-400"></fa-icon>
             <h1 class="font-main company-name leading-normal lg:leading-loose font-bold lg:text-4xl text-slate-400">
                 @if (!endDate) {
-                {{work.platform}}
+                {{work.platform | translate }}
                 }@else {
-                {{work.company}}
+                {{work.company  | translate}}
                 }
             </h1>
         </div>
         <div class="date flex flex-col lg:flex-row items-center lg:inline-block gap-2 text-slate-400">
             <div class="flex flex-row flex-nowrap w-full justify-between items-center gap-x-2 h-full start-date">
                 <fa-icon [icon]="faCalendar" aria-hidden="true" class="text-state-400"></fa-icon>
-                <time [attr.datetime]="work.start">{{work.start}}</time>
+                <time [attr.datetime]="work.start">{{work.start | translate}}</time>
             </div>
             @if (endDate) {
             <div class="flex flex-row flex-nowrap w-full justify-between items-center gap-x-1 text-state-400">
                 <fa-icon [icon]="faPersonRunning" aria-hidden="true" class="text-state-400"></fa-icon>
-                <time [attr.datetime]="work.end">{{work.end}}</time>
+                <time [attr.datetime]="work.end">{{work.end | translate }}</time>
             </div>
             }
         </div>
@@ -32,18 +32,14 @@
         <h3 class="job-title flex items-center text-blue-500">
             <fa-icon class="text-green-500 mr-5 ml-1 text-state-400" [icon]="faCheck" aria-hidden="true"></fa-icon>
             @if (myDate == "Nov 2024") {
-            {{'INTRO.WORKS.TITLE.FULLSTACK' | translate:{
-            title: work.title | translate
-            } }}
+                {{work.title | translate}}
             }@else {
-            {{'INTRO.WORKS.TITLE.FULLSTACK' | translate:{
-            title: work.title | translate
-            } }}
+                {{work.title | translate}}
             }
         </h3>
         <ul class="details-list list-disc pl-5 py-2 font-card-type leading-normal ul-responsive">
-            @for (task of work.tasks; track $index) {
-            <li>{{task}}</li>
+            @for (task of getTranslatedTasks(work); track $index) {
+            <li>{{translateDate(task)}}</li>
             }
         </ul>
     </section>

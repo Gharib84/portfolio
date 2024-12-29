@@ -9,6 +9,7 @@
         "PHONE": "Phone Number",
         "MESSAGE": "Message",
         "SEND": "Send",
+        "PROJECTS": "Projects",
         "WORK": {
             "EKO_OKNA": {
                 "TASKS": [
@@ -23,6 +24,14 @@
                     "Worked in an Agile environment, contributing to sprints and actively participating in daily stand-ups,retrospectives, and sprint planning."
                 ],
                 "DATES": {
+                    "START": "Mar 2023",
+                    "END": "Nov 2024"
+                },
+                "COMPANY": "Eko Okna S.A.",
+                "TITLE": {
+                    "JOB": "FullStack Engineer"
+                },
+                "PERIOD": {
                     "START": "Mar 2023",
                     "END": "Nov 2024"
                 }
@@ -44,13 +53,16 @@
                 "DATES": {
                     "START": "Nov 2024",
                     "END": ""
+                },
+                "platform": "Freelancer",
+                "TITLE": {
+                    "JOB": "FullStack Engineer"
+                },
+                "PERIOD": {
+                    "START": "Nov 2024",
+                    "END": null
                 }
             }
-        }
-    },
-    "WORKS": {
-        "TITLE": {
-            "FULLSTACK": "FullStack Engineer"
         }
     }
 }

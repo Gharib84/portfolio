@@ -11,6 +11,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { ExperienceComponent } from './components/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CardComponent } from './components/cards/card.component';
+import { MainNavComponent } from './components/main.nav/main.nav.component';
 @NgModule({
   declarations: [
     AppComponent
@@ -25,9 +26,11 @@ import { CardComponent } from './components/cards/card.component';
     BrowserAnimationsModule,
     TranslatePipe,
     TranslateModule.forRoot(translateMetaData),
-    CardComponent
+    CardComponent,
+    MainNavComponent
   ],
   providers: [provideHttpClient()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [PresentationComponent]
 })
 export class AppModule { }

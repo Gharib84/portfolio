@@ -11,12 +11,12 @@
 
                 <li class="font-main dark-mode ml-2">
                     <a [routerLink]="['projects']" routerLinkActive="router-link-active" >
-                        {{projects}}
+                        {{'INTRO.PROJECTS' | translate}}
                     </a>
                 </li>
                 <li class="font-main dark-mode ml-2">
                     <a href="#contact">
-                        {{contact}}
+                        {{'INTRO.CONTACT' | translate}}
                     </a>
 
                 </li>
@@ -31,13 +31,13 @@
                 font-secondary
                 ml-2
                 mr-1
-                ">
-                <option value="en" class="text-white
+                "(change)="switchLanguage($event)">
+                <option value="english" class="text-white
                     font-secondary bg-black">
                     🇺🇲 en
 
                 </option>
-                <option value="en" class="text-white font-secondary
+                <option value="polish" class="text-white font-secondary
                     bg-black">
                     🇵🇱 pl
 

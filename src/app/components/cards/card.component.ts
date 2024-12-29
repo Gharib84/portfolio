@@ -23,35 +23,41 @@ export class CardComponent implements OnInit, AfterViewInit, AfterViewChecked {
   faPersonRunning = faPersonRunning;
   public works: Experience[] = [
     {
-      company: "Eko Okna S.A.",
+      company: "INTRO.WORK.EKO_OKNA.COMPANY",
       type: "Hybrid",
-      title: "FullStack Engineer",
-      start: "Mar 2023",
-      end:   "Nov 2024",
+      title: "INTRO.WORK.EKO_OKNA.TITLE.JOB",
+      start: "INTRO.WORK.EKO_OKNA.PERIOD.START",
+      end:   "INTRO.WORK.EKO_OKNA.PERIOD.END",
       tasks: []
     },
     {
-      platform: "Freelancer",
+      platform: "INTRO.WORK.FREELANCER.platform",
       type: "Remote",
-      title: "FullStack Engineer",
-      start: "Nov 2024",
+      title: "INTRO.WORK.FREELANCER.TITLE.JOB",
+      start: "INTRO.WORK.FREELANCER.PERIOD.START",
       tasks: []
     }
   ]
   private translate = inject(TranslateService);
-  currentLanguage: string = 'pl'; // Default language
+  currentLanguage: string = 'polish'; // Default language
   translations: any = {};
   public ngOnInit(): void {
-    this.works.forEach(work => {
-      const key = work.company ? "EKO_OKNA" : "FREELANCER";
-      this.translate.get(`INTRO.WORK.${key}.TASKS`).subscribe({
-        next(tasks: string[]) {
-          work.tasks = tasks;
-        },
-      })
-    })
+    this.translate.get('INTRO.WORK').subscribe((data) => {
+      this.translations = data; // Store all translations under 'INTRO.WORK'
+    });
   }
 
+  getTranslatedTasks(work: Experience): string[] {
+    const key = this.getCompanyKey(work); // Determine company key
+    let tasks: string[] = [];
+    
+    this.translate.get(`INTRO.WORK.${key}.TASKS`).subscribe((translatedTasks: string[]) => {
+      tasks = translatedTasks;
+    });
+  
+    return tasks;
+  }
+  
 
   public ngAfterViewInit(): void {
   }
@@ -71,12 +77,7 @@ export class CardComponent implements OnInit, AfterViewInit, AfterViewChecked {
     }
   }
 
-  getTranslatedTasks(work: any): string[] {
-    const key = work.company ? "EKO_OKNA" : "FREELANCER";
-    return this.translate.instant(`WORKS.${key}.TASKS`);
-  }
-
-    // Helper method to get company/platform translation key
+  // Helper method to get company/platform translation key
   protected getCompanyKey(work: Experience): string {
     return work.company ? 'EKO_OKNA' : 'FREELANCER';
   }

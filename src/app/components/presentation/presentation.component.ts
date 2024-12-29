@@ -19,7 +19,7 @@ export class PresentationComponent implements OnInit {
 
     ngOnInit(): void {
         this.translate.setDefaultLang("english");
-        this.translate.use("polish");
+        this.translate.use("english");
     }
 
 }
