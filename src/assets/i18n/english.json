@@ -10,6 +10,16 @@
         "MESSAGE": "Message",
         "SEND": "Send",
         "PROJECTS": "Projects",
+        "COMPANY_NAME": {
+            "REQUIRED": " Company name is required."
+        },
+        "PHONE_VALIDATION":{
+          "REQUIRED": "Phone number is required.",
+          "INVALID": "Phone number is not valid please check."
+        },
+        "MESSAGE_VALIDATION":{
+          "REQUIRED": "Message is required."
+        },
         "WORK": {
             "EKO_OKNA": {
                 "TASKS": [

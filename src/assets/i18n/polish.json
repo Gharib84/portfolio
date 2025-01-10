@@ -10,6 +10,16 @@
     "MESSAGE": "Wiadomość",
     "SEND": "Prześlij",
     "PROJECTS":"Projekty",
+    "COMPANY_NAME": {
+            "REQUIRED": " Nazwa firma jest wymagana."
+        },
+        "PHONE_VALIDATION":{
+          "REQUIRED": "Numer telefonu jest wymagany.",
+          "INVALID": "Numer telefonu jest nieprawidłowy, proszę sprawdzić."
+        },
+        "MESSAGE_VALIDATION":{
+          "REQUIRED": "Wiadomość jest wymagana."
+        },
     "WORK": {
       "EKO_OKNA": {
         "TASKS": [

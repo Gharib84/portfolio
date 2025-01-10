@@ -10,7 +10,7 @@
             </div>
             @if (information.get("companyName")?.dirty && information.get("companyName")?.hasError('required')) {
                  <div class="error">
-                    Company Name is required.
+                        {{'INTRO.COMPANY_NAME.REQUIRED' | translate }}
                  </div>   
             }
             <div class="mt-8 mb-4">
@@ -19,12 +19,12 @@
             </div>
             @if (information.get("phone")?.dirty && information.get("phone")?.hasError('invalidPhoneNumber')) {
                 <div class="error">
-                    Phone number is not valid please check. 
+                    {{'INTRO.PHONE_VALIDATION.INVALID' | translate}}
                 </div>
             }
             @if (information.get("phone")?.dirty && information.get("phone")?.hasError('required')) {
                 <div class="error">
-                    Phone number is required. 
+                    {{'INTRO.PHONE_VALIDATION.REQUIRED' | translate}}
                 </div>
             }
 
@@ -34,7 +34,7 @@
             </div>
             @if (information.get("message")?.dirty && information.get("message")?.hasError('required')) {
                 <div class="error">
-                     Message is required. 
+                    {{'INTRO.MESSAGE_VALIDATION.REQUIRED' | translate}}
                 </div>
             }
             <div class="mt-8 mb-4">
