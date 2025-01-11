@@ -39,8 +39,9 @@ export class CardComponent implements OnInit, AfterViewInit, AfterViewChecked {
     }
   ]
   private translate = inject(TranslateService);
-  currentLanguage: string = 'polish'; // Default language
+  currentLanguage: string = 'english'; // Default language
   translations: any = {};
+
   public ngOnInit(): void {
     this.translate.get('INTRO.WORK').subscribe((data) => {
       this.translations = data; // Store all translations under 'INTRO.WORK'
