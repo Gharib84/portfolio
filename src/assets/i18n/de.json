@@ -1,0 +1,78 @@
+{
+    "INTRO": {
+        "GREETING": "Hey,ich bin",
+        "NAME": "Mahmoud Gharib Said Gharib",
+        "DESCRIPTION": "Ich bin derzeit Softwareentwickler mit zwei Jahren Erfahrung. In meiner Rolle habe ich ein ERP-System für Mitarbeiter mit Tausenden von Nutzern entwickelt und aufgebaut und eng mit funktionsübergreifenden Teams zusammengearbeitet, um eine nahtlose Leistung und Benutzererfahrung sicherzustellen. Ich habe starke Fähigkeiten in Backend- und Frontend-Technologien, einschließlich Nest.js, Symfony und Angular. Meine Programmierkenntnisse umfassen TypeScript, PHP, Zig und Python, mit Erfahrung in der Arbeit mit SQL- und NoSQL-Datenbanken. Darüber hinaus bin ich erfahren im Einsatz von Docker für Containerisierung und Umgebungsmanagement. Ich habe ein Berufsschulprogramm in Informatik in Polen abgeschlossen und freue mich darauf, meine Fähigkeiten und Erfahrungen in neue Möglichkeiten einzubringen.",
+        "EXPERIENCE": "Erfahrung",
+        "CONTACT": "Kontakt",
+        "COMPANY": "Firmen name",
+        "PHONE": "Telefonnummer",
+        "MESSAGE": "Nachricht",
+        "SEND": "Senden",
+        "PROJECTS": "Projekte",
+        "COMPANY_NAME": {
+            "REQUIRED": "Firmenname ist erforderlich."
+        },
+        "PHONE_VALIDATION": {
+            "REQUIRED": "Die Telefonnummer ist erforderlich.",
+            "INVALID": "Die Telefonnummer ist ungültig, bitte überprüfen Sie sie.."
+        },
+        "MESSAGE_VALIDATION": {
+            "REQUIRED": "Nachricht ist erforderlich."
+        },
+        "WORK": {
+            "EKO_OKNA": {
+                "TASKS": [
+                    "Zusammenarbeit mit funktionsübergreifenden Teams zur Gestaltung, Entwicklung und Wartung des ERP-Systems, um benutzerfreundliche, reaktionsschnelle Schnittstellen und effiziente Backend-Systeme sicherzustellen.",
+                    "Arbeit mit Technologien wie HTML, CSS, JavaScript, um dynamische, responsive Benutzeroberflächen zu erstellen.",
+                    "Entwicklung und Optimierung der serverseitigen Logik mit Symfony, PHP zur Verbesserung der Leistung und Skalierbarkeit.",
+                    "Integration von Datenbanken wie MySQL, PostgreSQL, MongoDB und Sicherstellung einer nahtlosen Kommunikation zwischen Frontend und Backend.",
+                    "Nutzung von RESTful APIs und Drittanbieterbibliotheken zur Erweiterung der Funktionalität und Integration externer Dienste.",
+                    "Teilnahme an Code-Reviews und Zusammenarbeit mit Senior-Entwicklern, um Best Practices in der Softwareentwicklung zu befolgen.",
+                    "Verwendung von Versionskontrollsystemen (z. B. Git), um Entwicklungsabläufe zu verwalten und zu dokumentieren.",
+                    "Unterstützung beim Debuggen und Beheben von Problemen auf beiden Seiten des Stacks, sowohl auf der Client- als auch auf der Serverseite.",
+                    "Arbeit in einem agilen Umfeld, Beitrag zu Sprints und aktive Teilnahme an täglichen Stand-ups, Retrospektiven und Sprint-Planung."
+                ],
+                "DATES": {
+                    "START": "März 2023",
+                    "END": "Nov 2024"
+                },
+                "COMPANY": "Eko Okna S.A.",
+                "TITLE": {
+                    "JOB": "Full-Stack-Entwickler"
+                },
+                "PERIOD": {
+                    "START": "März 2023",
+                    "END": "Nov 2024"
+                }
+            },
+            "FREELANCER": {
+                "TASKS": [
+                    "A full-stack progressive web application for booking travel trips online",
+                    "designed and developed from scratch using modern technologies.",
+                    " This app allows users to browse book and manage travel trips effortlessly.",
+                    "Built with: Angular (18+), NestJS, TypeORM, MySQL, Swagger, Material Design, Spartan UI.",
+                    "Front-End: Implemented a responsive and intuitive user interface using Angular, Material Design, and Spartan UI, ensuring a smooth and consistent UX across devices.",
+                    "Back-End: Developed a RESTful API using NestJS and TypeORM with MySQL for data persistence. Ensured scalability and maintainability of the backend architecture.",
+                    "Utilized RESTful APIs and third-party libraries for enhanced functionality and to integrate external services.",
+                    "Back-End: Developed a RESTful API using NestJS and TypeORM with MySQL for data persistence. Ensured scalability and maintainability of the backend architecture.",
+                    "API Documentation: Designed and documented the entire API from scratch using Swagger for better developer collaboration and ease of integration.",
+                    "Progressive Web App (PWA): Enabled offline capabilities and push notifications, providing a native-like experience for users.",
+                    "Challenges Overcome: Optimized performance for large data sets and managed complex booking workflows."
+                ],
+                "DATES": {
+                    "START": "Nov 2024",
+                    "END": ""
+                },
+                "platform": "Freelancer",
+                "TITLE": {
+                    "JOB": "Full-Stack-Entwickler"
+                },
+                "PERIOD": {
+                    "START": "Nov 2024",
+                    "END": null
+                }
+            }
+        }
+    }
+}
