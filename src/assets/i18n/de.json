@@ -47,19 +47,17 @@
                 }
             },
             "FREELANCER": {
-                "TASKS": [
-                    "A full-stack progressive web application for booking travel trips online",
-                    "designed and developed from scratch using modern technologies.",
-                    " This app allows users to browse book and manage travel trips effortlessly.",
-                    "Built with: Angular (18+), NestJS, TypeORM, MySQL, Swagger, Material Design, Spartan UI.",
-                    "Front-End: Implemented a responsive and intuitive user interface using Angular, Material Design, and Spartan UI, ensuring a smooth and consistent UX across devices.",
-                    "Back-End: Developed a RESTful API using NestJS and TypeORM with MySQL for data persistence. Ensured scalability and maintainability of the backend architecture.",
-                    "Utilized RESTful APIs and third-party libraries for enhanced functionality and to integrate external services.",
-                    "Back-End: Developed a RESTful API using NestJS and TypeORM with MySQL for data persistence. Ensured scalability and maintainability of the backend architecture.",
-                    "API Documentation: Designed and documented the entire API from scratch using Swagger for better developer collaboration and ease of integration.",
-                    "Progressive Web App (PWA): Enabled offline capabilities and push notifications, providing a native-like experience for users.",
-                    "Challenges Overcome: Optimized performance for large data sets and managed complex booking workflows."
-                ],
+                "TASKS":[
+                    "Eine Full-Stack-Progressive-Webanwendung für die Online-Buchung von Reisen, von Grund auf entworfen und mit modernen Technologien entwickelt.",
+                    "Diese App ermöglicht es Benutzern, Reisen mühelos zu durchsuchen, zu buchen und zu verwalten.",
+                    "Entwickelt mit: Angular (18+), NestJS, TypeORM, MySQL, Swagger, Material Design, Spartan UI.",
+                    "Frontend: Eine responsive und intuitive Benutzeroberfläche mit Angular, Material Design und Spartan UI implementiert, um eine reibungslose und konsistente Benutzererfahrung auf verschiedenen Geräten sicherzustellen.",
+                    "Backend: Eine RESTful API mit NestJS und TypeORM unter Verwendung von MySQL für die Datenpersistenz entwickelt. Skalierbarkeit und Wartbarkeit der Backend-Architektur sichergestellt.",
+                    "RESTful APIs und Drittanbieterbibliotheken genutzt, um die Funktionalität zu erweitern und externe Dienste zu integrieren.",
+                    "API-Dokumentation: Die gesamte API von Grund auf mit Swagger entworfen und dokumentiert, um die Zusammenarbeit zwischen Entwicklern zu verbessern und die Integration zu erleichtern.",
+                    "Progressive Web App (PWA): Offline-Funktionen und Push-Benachrichtigungen ermöglicht, um den Benutzern eine native App-ähnliche Erfahrung zu bieten.",
+                    "Herausforderungen gemeistert: Die Leistung für große Datensätze optimiert und komplexe Buchungsworkflows verwaltet."
+                ],                
                 "DATES": {
                     "START": "Nov 2024",
                     "END": ""
