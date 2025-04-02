@@ -7,7 +7,7 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { ContactComponent } from '../contact/contact.component';
 @Component({
     selector: 'app-english',
-    imports: [CommonModule, MainNavComponent, PresentationComponent, RouterModule,ContactComponent],
+    imports: [CommonModule, MainNavComponent, PresentationComponent, RouterModule,ContactComponent, ProjectsComponent],
     templateUrl: './english.component.html',
     styleUrls: ['./english.component.scss']
 })
