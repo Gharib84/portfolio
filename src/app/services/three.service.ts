@@ -51,7 +51,7 @@ export class ThreeService implements OnDestroy {
   private gui!: GUI;
   private animationId!: number;
 
-  constructor() { }
+  constructor(private ngZone: NgZone) { }
 
   ngOnDestroy(): void {
     if (this.animationId) {
