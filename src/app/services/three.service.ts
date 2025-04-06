@@ -1,4 +1,4 @@
-import { Injectable, NgZone, OnDestroy } from '@angular/core';
+import { ElementRef, Injectable, NgZone, OnDestroy } from '@angular/core';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { WebGLRenderer } from 'three';
@@ -17,30 +17,24 @@ export class ThreeService implements OnDestroy {
 	private renderer!:WebGLRenderer;
 
 	constructor(private ngZone: NgZone) { }
-	 initThreeJS( canvas: HTMLElement): void {
+	 initThreeJS( canvas: ElementRef): void {
 		this.camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.1, 100);
 		this.camera.position.set(4.5, 2, 3);
-
 		this.scene = new THREE.Scene();
-
 		// Sun
 		const sun = new THREE.DirectionalLight('#ffffff', 2);
 		sun.position.set(0, 0, 3);
 		this.scene.add(sun);
-
 		// Textures
 		const textureLoader = new THREE.TextureLoader();
 		const dayTexture = textureLoader.load('assets/textures/planets/earth_day_4096.jpg');
 		dayTexture.colorSpace = THREE.SRGBColorSpace;
 		dayTexture.anisotropy = 8;
-
 		const nightTexture = textureLoader.load('assets/textures/planets/earth_night_4096.jpg');
 		nightTexture.colorSpace = THREE.SRGBColorSpace;
 		nightTexture.anisotropy = 8;
-
 		const bumpRoughnessCloudsTexture = textureLoader.load('assets/textures/planets/earth_bump_roughness_clouds_4096.jpg');
 		bumpRoughnessCloudsTexture.anisotropy = 8;
-
 		// Create the globe
 		const sphereGeometry = new THREE.SphereGeometry(1, 64, 64);
 		const globeMaterial = new THREE.MeshStandardMaterial({
@@ -59,6 +53,7 @@ export class ThreeService implements OnDestroy {
 		this.renderer.setPixelRatio(window.devicePixelRatio);
 		this.renderer.setSize(window.innerWidth, window.innerHeight);
 		this.renderer.setAnimationLoop(this.animate.bind(this));
+		canvas.nativeElement.appendChild(this.renderer.domElement);
 
 
 		// Controls

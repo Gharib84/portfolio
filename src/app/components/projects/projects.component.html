@@ -1,13 +1,12 @@
 <section id="projects" class="main fade-in-element" appFadeIn>
   <h1 class="fade-in-element" appFadeIn>{{ 'INTRO.PROJECTS' | translate }}</h1>
   <div class="container">
-    <div class="projects-grid">
-      
-        <div class="project-threejs-container">
-          <!-- Three.js element will go here later -->
-          <p>Three.js will be here</p>
-        </div>
+    <div *ngFor="let project of myProjects()" class="project-card" #projectCard 
+    (mouseenter)="hoverCard(projectCard)" (mouseleave)="resetCard(projectCard)">
+      <div class="card-content">
+        <h3 class="mb-2 mt-2 text-left font-secondary text-slate-400  leading-normal lg:leading-loose">{{ project.title }}</h3>
       </div>
+      <div class="card-glare mt-2 mb-2"></div>
     </div>
-
+  </div>
 </section>

@@ -23,7 +23,7 @@
 
     h1 {
         font-family: 'Anton', sans-serif;
-        @apply text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-10;
+        @apply text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold;
         background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -36,5 +36,4 @@
         max-width: 80%;
         right: 1vw;
     }
-
 }
