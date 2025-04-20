@@ -172,8 +172,8 @@ body.dark-mode {
     background-size: cover;
     transform: translateZ(0); 
 
-    .details-list li {
-        color: #808a98 !important; // or use another high-contrast color
+    .details-list li , .portfolio-type {
+        color: #5e646e !important; // or use another high-contrast color
       }
    
 }
