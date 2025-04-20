@@ -11,17 +11,19 @@
                 @if (!endDate) {
                 {{work.platform | translate }}
                 }@else {
-                {{work.company  | translate}}
+                {{work.company | translate}}
                 }
             </h1>
         </div>
         <div class="date flex flex-col lg:flex-row items-center lg:inline-block gap-2 text-slate-400">
-            <div class="flex flex-row flex-nowrap w-full justify-between items-center gap-x-2 h-full start-date">
+            <div
+                class="company-period flex flex-row flex-nowrap w-full justify-between items-center gap-x-2 h-full start-date">
                 <fa-icon [icon]="faCalendar" aria-hidden="true" class="text-state-400"></fa-icon>
                 <time [attr.datetime]="work.start">{{work.start | translate}}</time>
             </div>
             @if (endDate) {
-            <div class="flex flex-row flex-nowrap w-full justify-between items-center gap-x-1 text-state-400">
+            <div
+                class="company-period flex flex-row flex-nowrap w-full justify-between items-center gap-x-1 text-state-400">
                 <fa-icon [icon]="faPersonRunning" aria-hidden="true" class="text-state-400"></fa-icon>
                 <time [attr.datetime]="work.end">{{work.end | translate }}</time>
             </div>
@@ -32,12 +34,13 @@
         <h3 class="job-title flex items-center text-blue-500">
             <fa-icon class="text-green-500 mr-5 ml-1 text-state-400" [icon]="faCheck" aria-hidden="true"></fa-icon>
             @if (myDate == "Nov 2024") {
-                {{work.title | translate}}
+            {{work.title | translate}}
             }@else {
-                {{work.title | translate}}
+            {{work.title | translate}}
             }
         </h3>
-        <ul class="details-list list-disc pl-5 py-2 font-card-type leading-normal ul-responsive">
+        <!-- Use the correct class name -->
+        <ul class="details-list list-disc pl-5 py-2 font-type-card leading-normal ul-responsive">
             @for (task of getTranslatedTasks(work); track $index) {
             <li>{{translateDate(task)}}</li>
             }

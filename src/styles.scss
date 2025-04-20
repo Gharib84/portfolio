@@ -157,6 +157,11 @@ body.light-mode {
         border: 2px solid transparent;
         @apply text-left text-blue-600 font-bold;
     }
+
+    .company-name, .company-period
+    {
+        color: #2d3436;
+    }
 }
 
 body.dark-mode {
@@ -166,6 +171,10 @@ body.dark-mode {
     background-attachment: fixed; 
     background-size: cover;
     transform: translateZ(0); 
+
+    .details-list li {
+        color: #808a98 !important; // or use another high-contrast color
+      }
    
 }
 
